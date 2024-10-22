@@ -55,7 +55,7 @@ const streamVideo = async (req, res, video) => {
   const fileSize = stat.size;
 
   /*
-    A kliens automatikusan elküldi a kért tartományt
+    A szerver elküldi a kért tartományt
     bytes=0-5242879/756399425 
     A nulla a kért adat kezdő byte-a. Itt most a legelejét kéri.
     A 5242879 a kért adat vége, itt most ez 5 MB
